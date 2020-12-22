@@ -1,121 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21119" started-at="2020-12-22T15:09:33 IST" finished-at="2020-12-22T15:09:54 IST">
+  <suite name="Default suite" duration-ms="52425" started-at="2020-12-22T16:06:57 IST" finished-at="2020-12-22T16:07:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21119" started-at="2020-12-22T15:09:33 IST" finished-at="2020-12-22T15:09:54 IST">
-      <class name="facebookTests.signupTests">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:facebookTests.signupTests@6acdbdf5]" name="invokeBrowser" is-config="true" duration-ms="5967" started-at="2020-12-22T15:09:33 IST" finished-at="2020-12-22T15:09:39 IST">
+    <test name="Default test" duration-ms="52425" started-at="2020-12-22T16:06:57 IST" finished-at="2020-12-22T16:07:49 IST">
+      <class name="facebookTests.signinTests">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:facebookTests.signinTests@6acdbdf5]" name="invokeBrowser" is-config="true" duration-ms="5727" started-at="2020-12-22T16:06:57 IST" finished-at="2020-12-22T16:07:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="user_can_signup_With_MobileNum_successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:facebookTests.signupTests@6acdbdf5]" name="user_can_signup_With_MobileNum_successfully" duration-ms="4803" started-at="2020-12-22T15:09:39 IST" data-provider="successSignupWithEmailData" finished-at="2020-12-22T15:09:44 IST">
+        <test-method status="FAIL" signature="user_cant_login_with_invalid_password(java.lang.String, java.lang.String)[pri:0, instance:facebookTests.signinTests@6acdbdf5]" name="user_cant_login_with_invalid_password" duration-ms="20864" started-at="2020-12-22T16:07:03 IST" data-provider="faillSigninWithInvPasswordsData" finished-at="2020-12-22T16:07:24 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Testonetest]]>
+                <![CDATA[omar0099_gath@hotmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Onetesttest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[aomar1988@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[aomar1988@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[test123123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Jan]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[1999]]>
+                <![CDATA[omarfr]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()='The password you’ve entered is incorrect. '] (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()='The password you’ve entered is incorrect. '] (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at facebook.BasePage.isElementDisplayed(BasePage.java:50)
+at facebook.SigninPage.isDisplaySigninPasswordError(SigninPage.java:23)
+at facebookTests.signinTests.user_cant_login_with_invalid_password(signinTests.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='The password you’ve entered is incorrect. ']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ENG-OMAR', ip: '172.20.147.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\omar0\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60388}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 87dd332c3e48ea5885c35832b7b18b52
+*** Element info: {Using=xpath, value=//div[text()='The password you’ve entered is incorrect. ']}
+at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_can_signup_With_MobileNum_successfully -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:facebookTests.signupTests@6acdbdf5]" name="terminateBrowser" is-config="true" duration-ms="94" started-at="2020-12-22T15:09:44 IST" finished-at="2020-12-22T15:09:44 IST">
+        </test-method> <!-- user_cant_login_with_invalid_password -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:facebookTests.signinTests@6acdbdf5]" name="terminateBrowser" is-config="true" duration-ms="87" started-at="2020-12-22T16:07:24 IST" finished-at="2020-12-22T16:07:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:facebookTests.signupTests@6acdbdf5]" name="invokeBrowser" is-config="true" duration-ms="5002" started-at="2020-12-22T15:09:44 IST" finished-at="2020-12-22T15:09:49 IST">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:facebookTests.signinTests@6acdbdf5]" name="invokeBrowser" is-config="true" duration-ms="4708" started-at="2020-12-22T16:07:24 IST" finished-at="2020-12-22T16:07:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="user_can_signup_With_MobileNum_successfully(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:facebookTests.signupTests@6acdbdf5]" name="user_can_signup_With_MobileNum_successfully" duration-ms="5118" started-at="2020-12-22T15:09:49 IST" data-provider="successSignupWithEmailData" finished-at="2020-12-22T15:09:54 IST">
+        <test-method status="FAIL" signature="user_cant_login_with_invalid_password(java.lang.String, java.lang.String)[pri:0, instance:facebookTests.signinTests@6acdbdf5]" name="user_cant_login_with_invalid_password" duration-ms="20836" started-at="2020-12-22T16:07:28 IST" data-provider="faillSigninWithInvPasswordsData" finished-at="2020-12-22T16:07:49 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Testonetest]]>
+                <![CDATA[froukh.froukh99@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Onetesttest]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[aomar1988@gmail.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[aomar1988@gmail.com]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[test123123]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[13]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Jan]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[1999]]>
+                <![CDATA[123www]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()='The password you’ve entered is incorrect. '] (tried for 20 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[text()='The password you’ve entered is incorrect. '] (tried for 20 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at facebook.BasePage.isElementDisplayed(BasePage.java:50)
+at facebook.SigninPage.isDisplaySigninPasswordError(SigninPage.java:23)
+at facebookTests.signinTests.user_cant_login_with_invalid_password(signinTests.java:51)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='The password you’ve entered is incorrect. ']"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ENG-OMAR', ip: '172.20.147.135', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\omar0\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60425}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 126450d17a2aa6d1b50f4c7b1da1f44c
+*** Element info: {Using=xpath, value=//div[text()='The password you’ve entered is incorrect. ']}
+at sun.reflect.GeneratedConstructorAccessor13.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_can_signup_With_MobileNum_successfully -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:facebookTests.signupTests@6acdbdf5]" name="terminateBrowser" is-config="true" duration-ms="55" started-at="2020-12-22T15:09:54 IST" finished-at="2020-12-22T15:09:54 IST">
+        </test-method> <!-- user_cant_login_with_invalid_password -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:facebookTests.signinTests@6acdbdf5]" name="terminateBrowser" is-config="true" duration-ms="97" started-at="2020-12-22T16:07:49 IST" finished-at="2020-12-22T16:07:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
-      </class> <!-- facebookTests.signupTests -->
+      </class> <!-- facebookTests.signinTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -24,7 +24,7 @@ public class signinTests extends BaseTest {
 		String actualUrl= driver.getCurrentUrl(); 
 		Assert.assertEquals(expectedUrl,actualUrl);    
 	     
-	}
+	} 
 	
 	@DataProvider(name="faillSigninWithInvEmailsData")
     public Object[][]  getFaillSigninWithInvEmailsData() throws Exception {

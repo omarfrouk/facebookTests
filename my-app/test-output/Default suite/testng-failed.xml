@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="facebookTests.signupTests">
+      <class name="facebookTests.signinTests">
         <methods>
           <include name="terminateBrowser"/>
-          <include name="user_can_signup_With_MobileNum_successfully" invocation-numbers="0 1"/>
           <include name="invokeBrowser"/>
+          <include name="user_cant_login_with_invalid_password" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- facebookTests.signupTests -->
+      </class> <!-- facebookTests.signinTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
